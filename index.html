@@ -6,307 +6,343 @@
 <title>OH MY GOD VINTAGE</title>
 
 <style>
+*{box-sizing:border-box}
+
 body{
   margin:0;
   background:#f6f0e6;
   color:#29251f;
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
+
 .app{
   max-width:650px;
   margin:auto;
-  padding:28px 22px 70px;
+  padding:24px 20px 60px;
 }
+
 .brand{
   text-align:center;
   font-family:Georgia,serif;
-  font-size:30px;
-  letter-spacing:4px;
-  margin-top:16px;
+  font-size:28px;
+  letter-spacing:3px;
+  margin-top:10px;
 }
+
 .sub{
   text-align:center;
-  color:#82796e;
-  letter-spacing:1px;
-  font-size:13px;
-  margin:8px 0 22px;
+  color:#8a7968;
+  font-size:12px;
+  letter-spacing:2px;
+  margin:7px 0 20px;
 }
+
+.progress{
+  font-size:12px;
+  color:#8a7968;
+  margin-bottom:8px;
+}
+
 .bar{
-  height:7px;
-  background:#e6dccb;
-  border-radius:9px;
+  height:6px;
+  background:#e3d7c7;
+  border-radius:10px;
   overflow:hidden;
+  margin-bottom:28px;
 }
-.bar i{
+
+.bar span{
   display:block;
   width:10%;
   height:100%;
-  background:#b98a45;
+  background:#a7835c;
 }
+
 .card{
-  background:#fffaf2;
-  border:1px solid #e5d8c4;
-  border-radius:24px;
-  padding:24px;
-  margin-top:28px;
-  box-shadow:0 8px 30px #5e4c3220;
+  background:#fffaf3;
+  border:1px solid #e5d8c8;
+  border-radius:22px;
+  padding:20px;
+  box-shadow:0 8px 25px rgba(70,50,30,.07);
 }
+
 h1{
   font-family:Georgia,serif;
-  font-size:34px;
-  margin:4px 0 8px;
+  font-size:30px;
+  line-height:1.1;
+  margin:4px 0 12px;
 }
-h2{
-  font-family:Georgia,serif;
-  font-size:25px;
+
+.lead{
+  color:#685d52;
+  line-height:1.55;
 }
-.eyebrow{
-  color:#a27739;
-  font-weight:700;
-  font-size:12px;
-  letter-spacing:1.5px;
-}
-.find{
-  height:230px;
-  border-radius:18px;
-  background:linear-gradient(145deg,#e9dfcf,#faf6ef);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:20px 0;
-  font-family:Georgia,serif;
-  color:#9b815f;
-  text-align:center;
-}
-.seller{
-  border-left:3px solid #c49a5a;
-  padding:8px 14px;
-  margin:18px 0;
-}
-.lucy{
-  background:#eee2ce;
-  border-radius:18px;
-  padding:14px 16px;
-  margin:18px 0;
-}
-.btn{
+
+.photo{
   width:100%;
-  border:1px solid #c7aa7d;
-  background:#fffaf3;
-  border-radius:15px;
+  display:block;
+  border-radius:18px;
+  margin:18px 0;
+}
+
+.lucy{
+  background:#efe4d4;
+  border-radius:16px;
+  padding:14px 16px;
+  margin:16px 0;
+  line-height:1.45;
+}
+
+.lucy strong{
+  color:#876640;
+}
+
+.question{
+  font-family:Georgia,serif;
+  font-size:21px;
+  margin:24px 0 12px;
+}
+
+button{
+  width:100%;
+  border:1px solid #d6c4ae;
+  background:#fff;
+  color:#29251f;
+  border-radius:14px;
   padding:15px;
-  margin:7px 0;
+  margin:6px 0;
   font-size:16px;
-  color:#332c23;
+  text-align:left;
 }
-.btn.primary{
-  background:#332b22;
-  color:white;
-  border-color:#332b22;
+
+button:active{
+  background:#eee1d1;
 }
-.hidden{display:none}
-.achievement{
+
+.hidden{
+  display:none;
+}
+
+.answer{
+  background:#f0e6d8;
+  border-radius:16px;
+  padding:16px;
+  margin-top:15px;
+  line-height:1.5;
+}
+
+.mark{
+  width:100%;
+  display:block;
+  border-radius:18px;
+  margin:18px 0 8px;
+}
+
+.caption{
   text-align:center;
-  font-size:56px;
+  color:#827467;
+  font-size:12px;
+  margin-bottom:20px;
 }
-.small{
-  font-size:13px;
-  color:#887d70;
+
+.gold{
+  color:#987347;
+  font-weight:600;
+}
+
+.finish{
+  text-align:center;
+  margin-top:25px;
+  font-family:Georgia,serif;
+  font-size:23px;
 }
 </style>
 </head>
 
 <body>
 
-<main class="app">
+<div class="app">
 
-<div class="brand">OH MY GOD</div>
-<div class="sub">VINTAGE SCHOOL · УРОВЕНЬ 1 — НАУЧИСЬ ВИДЕТЬ</div>
+  <div class="brand">OH MY GOD VINTAGE</div>
+  <div class="sub">VINTAGE SCHOOL</div>
 
-<div class="bar"><i id="progress"></i></div>
+  <div class="progress">УРОВЕНЬ 1 · НАУЧИСЬ ВИДЕТЬ · 1/10</div>
+  <div class="bar"><span></span></div>
 
-<section class="card" id="s1">
+  <div class="card">
 
-<div class="eyebrow">УРОК 1/10 · ~3 МИНУТЫ</div>
+    <h1>Не хватай сразу 😂</h1>
 
-<h1>НЕ ХВАТАЙ СРАЗУ</h1>
+    <p class="lead">
+      Представь: блошиный рынок. Перед тобой брошь.
+      Продавец уверенно сообщает:
+    </p>
 
-<div class="find">
-Здесь скоро будет твоя настоящая<br>
-Sarah Coventry ✨
+    <p><strong>«Винтажная. Редкая. Очень старая.»</strong></p>
+
+    <img class="photo" src="IMG_0785.jpeg" alt="Винтажная брошь">
+
+    <div class="lucy">
+      <strong>💬 Люся:</strong><br>
+      Ну конечно. Редкая. Очень старая.
+      Осталось только выяснить — правда ли хоть что-нибудь из этого. 😏
+    </div>
+
+    <div class="question">Что делаешь первым?</div>
+
+    <button onclick="wrongBuy()">💸 Беру. Пока не забрали.</button>
+    <button onclick="inspect()">🔎 Сначала осмотрю</button>
+    <button onclick="leave()">🚶‍♀️ Ухожу. Подозрительно всё это.</button>
+
+    <div id="result" class="hidden"></div>
+
+    <div id="step2" class="hidden">
+
+      <div class="question">С чего начнём осмотр?</div>
+
+      <button onclick="flipBrooch()">🙃 Переверну брошь</button>
+      <button onclick="markFirst()">🔤 Сразу ищу клеймо</button>
+      <button onclick="googleFirst()">📱 Сначала Google</button>
+
+    </div>
+
+    <div id="back" class="hidden">
+
+      <img class="photo" src="IMG_0786.jpeg" alt="Оборот броши">
+
+      <div class="lucy">
+        <strong>💬 Люся:</strong><br>
+        Вот. Уже лучше. Красивое лицо украшения умеет отвлекать.
+        А оборот часто болтает гораздо больше.
+      </div>
+
+      <p>
+        Смотрим на <span class="gold">застёжку, пайку, крепление камней,
+        поверхность металла</span> и только потом собираем версию.
+      </p>
+
+      <div class="question">А теперь — видишь что-нибудь интересное?</div>
+
+      <button onclick="showMark()">🔍 Кажется, здесь есть клеймо</button>
+
+    </div>
+
+    <div id="markStep" class="hidden">
+
+      <img class="mark"
+        src="A96E6016-1BF2-416F-B641-15C74EF9C03B.png"
+        alt="Клеймо Sarah Coventry">
+
+      <div class="caption">Увеличенный фрагмент клейма</div>
+
+      <div class="lucy">
+        <strong>💬 Люся:</strong><br>
+        А вот теперь у нас не рассказ продавца, а <strong>улика</strong>.
+      </div>
+
+      <p>
+        На клейме читается:
+        <strong>© SARAH COV</strong>.
+      </p>
+
+      <p>
+        Это сокращённая маркировка имени
+        <strong>Sarah Coventry</strong>.
+      </p>
+
+      <p>
+        Но запомни важную вещь:
+        <strong>увидеть название — ещё не значит закончить атрибуцию.</strong>
+      </p>
+
+      <div class="question">Клеймо есть. Значит всё доказано?</div>
+
+      <button onclick="finalAnswer(false)">Да. Клеймо же есть.</button>
+      <button onclick="finalAnswer(true)">Нет. Проверяем саму вещь дальше.</button>
+
+    </div>
+
+    <div id="final" class="hidden"></div>
+
+  </div>
 </div>
-
-<p>
-<b>Суббота. Блошиный рынок. 7:34.</b><br>
-Кофе ещё не подействовал. И тут на столе лежит ОНА.
-</p>
-
-<div class="seller">
-Продавец: «Винтажная. Американская. Старая.»<br>
-<b>€12</b>
-</div>
-
-<div class="lucy">
-👩🏻‍🦱 <b>Люся:</b>
-«Звучит красиво. А теперь попробуем не покупать историю вместе с брошью.» 😏
-</div>
-
-<button class="btn" onclick="go(2)">😍 БЕРУ ЗА €12</button>
-<button class="btn primary" onclick="go(2)">🤨 СНАЧАЛА ПОСМОТРЮ</button>
-<button class="btn" onclick="go(2)">🚶 НЕ МОЁ — ИДУ ДАЛЬШЕ</button>
-
-</section>
-
-
-<section class="card hidden" id="s2">
-
-<div class="eyebrow">ШАГ 2</div>
-
-<h2>С чего начнём?</h2>
-
-<p>У тебя 30 секунд. Что проверишь первым?</p>
-
-<button class="btn" onclick="hint('Клеймо полезно. Но сначала его ещё надо найти 😏')">
-🔎 ИЩУ КЛЕЙМО
-</button>
-
-<button class="btn" onclick="hint('Красивые камни прекрасно умеют отвлекать 😂')">
-💎 РАССМАТРИВАЮ КАМНИ
-</button>
-
-<button class="btn" onclick="hint('Google успеет. Сначала поймём, что именно ищем.')">
-📱 ИЩУ В GOOGLE
-</button>
-
-<button class="btn primary" onclick="go(3)">
-🙃 ПЕРЕВОРАЧИВАЮ
-</button>
-
-<div id="hint" class="lucy hidden"></div>
-
-</section>
-
-
-<section class="card hidden" id="s3">
-
-<div class="eyebrow">ОБОРОТ</div>
-
-<h2>Вот где начинается расследование</h2>
-
-<div class="find">
-Здесь будет настоящее фото<br>
-оборота твоей броши
-</div>
-
-<p>
-Не ищи пока ответ.
-Смотри на застёжку, конструкцию, крепление центра и маркировку.
-</p>
-
-<button class="btn primary" onclick="go(4)">
-🔎 Я НАШЛА КЛЕЙМО
-</button>
-
-</section>
-
-
-<section class="card hidden" id="s4">
-
-<div class="eyebrow">КЛЕЙМО</div>
-
-<h2>Не дорисовываем буквы силой мысли</h2>
-
-<p>
-На нашем экземпляре маркировка отбита криво.
-Фиксируем только то, что действительно можем прочитать.
-</p>
-
-<div class="lucy">
-👩🏻‍🦱 <b>Люся:</b>
-«Не уверена — так и записываем.
-Хорошая атрибуция начинается не с ответа.
-Она начинается с вопроса.»
-</div>
-
-<button class="btn primary" onclick="go(5)">
-📚 ПРОВЕРИТЬ ПО ИСТОЧНИКУ
-</button>
-
-</section>
-
-
-<section class="card hidden" id="s5">
-
-<div class="eyebrow">РАСКРЫТИЕ</div>
-
-<h2>SARAH COVENTRY</h2>
-
-<p>
-Теперь сопоставляем не только клеймо:
-форму цветка, зубчатые ажурные лепестки,
-длинный стебель, куполообразный центр,
-AB-стразы и размер.
-</p>
-
-<div class="lucy">
-👩🏻‍🦱 <b>Люся:</b>
-«Вот теперь это уже не “мне кажется”.
-Это аргумент.»
-</div>
-
-<button class="btn primary" onclick="go(6)">
-ЧТО Я ТОЛЬКО ЧТО СДЕЛАЛА?
-</button>
-
-</section>
-
-
-<section class="card hidden" id="s6">
-
-<div class="achievement">🙃</div>
-
-<h2 style="text-align:center">
-СМОТРИШЬ НА ЗАД
-</h2>
-
-<p>
-Ты посмотрела на вещь до покупки,
-перевернула её, нашла маркировку,
-не стала додумывать буквы
-и проверила гипотезу по источнику.
-</p>
-
-<div class="lucy">
-👩🏻‍🦱 <b>Люся:</b>
-«Теперь ты не просто смотришь на украшение.
-Ты его осматриваешь.» 😏
-</div>
-
-<p class="small" style="text-align:center">
-НЕ УГАДЫВАЙ.<br>
-СОБИРАЙ ДОКАЗАТЕЛЬСТВА.
-</p>
-
-</section>
-
-</main>
 
 <script>
-function go(n){
-  document.querySelectorAll("section").forEach(function(x){
-    x.classList.add("hidden");
-  });
 
-  document.getElementById("s"+n).classList.remove("hidden");
-  document.getElementById("progress").style.width=(n/6*100)+"%";
-  window.scrollTo(0,0);
+function show(id){
+  document.getElementById(id).classList.remove("hidden");
 }
 
-function hint(t){
-  var x=document.getElementById("hint");
-  x.textContent="👩🏻‍🦱 Люся: "+t;
-  x.classList.remove("hidden");
+function wrongBuy(){
+  const r=document.getElementById("result");
+  r.className="answer";
+  r.innerHTML=
+  "😂 <strong>Люся:</strong> Я понимаю. Она уже мысленно твоя. Но деньги пока придержим. Сначала 20 секунд на осмотр.";
+  show("step2");
 }
+
+function inspect(){
+  const r=document.getElementById("result");
+  r.className="answer";
+  r.innerHTML=
+  "Именно. Цена пока подождёт. История продавца тоже. <strong>Сначала вещь.</strong>";
+  show("step2");
+}
+
+function leave(){
+  const r=document.getElementById("result");
+  r.className="answer";
+  r.innerHTML=
+  "Не покупать — иногда отличный способ сохранить деньги 😄 Но раз уж брошь перед нами, давай хотя бы бесплатно потренируем глаз.";
+  show("step2");
+}
+
+function flipBrooch(){
+  show("back");
+  document.getElementById("back").scrollIntoView({behavior:"smooth"});
+}
+
+function markFirst(){
+  const r=document.getElementById("result");
+  r.className="answer";
+  r.innerHTML=
+  "Клеймо обязательно посмотрим. Но не превращаем его в бога атрибуции. Сначала перевернём вещь и посмотрим на неё целиком.";
+  flipBrooch();
+}
+
+function googleFirst(){
+  const r=document.getElementById("result");
+  r.className="answer";
+  r.innerHTML=
+  "Google ещё пригодится. Но если мы пока не знаем, <strong>что именно видим</strong>, искать будем собственные догадки. Сначала оборот.";
+  flipBrooch();
+}
+
+function showMark(){
+  show("markStep");
+  document.getElementById("markStep").scrollIntoView({behavior:"smooth"});
+}
+
+function finalAnswer(correct){
+  const f=document.getElementById("final");
+  f.className="answer";
+
+  if(correct){
+    f.innerHTML=
+    "🎯 <strong>Вот!</strong> Клеймо — сильная улика, но мы ещё сопоставляем его с конструкцией, качеством, материалами и источниками."+
+    "<div class='finish'>🙃 СМОТРИШЬ НА ЗАД</div>"+
+    "<p style='text-align:center'>Первое достижение получено.</p>"+
+    "<p><strong>Главное правило урока:</strong><br>Хорошая атрибуция начинается не с ответа. Она начинается с вопроса.</p>";
+  }else{
+    f.innerHTML=
+    "😈 <strong>Люся:</strong> А вот здесь я тебя поймала. Клейма тоже подделывают, а иногда маркировка сама по себе не даёт полной атрибуции. Поэтому проверяем, согласуется ли она с самой вещью."+
+    "<div class='finish'>🙃 СМОТРИШЬ НА ЗАД</div>"+
+    "<p><strong>Главное правило:</strong><br>Клеймо — доказательство, которое нужно читать в контексте, а не волшебная печать истины.</p>";
+  }
+
+  f.scrollIntoView({behavior:"smooth"});
+}
+
 </script>
 
 </body>
