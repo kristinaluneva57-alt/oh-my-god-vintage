@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>OH MY GOD VINTAGE</title>
+
+<style>
+body{
+  margin:0;
+  background:#f6f0e6;
+  color:#29251f;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.app{
+  max-width:650px;
+  margin:auto;
+  padding:28px 22px 70px;
+}
+.brand{
+  text-align:center;
+  font-family:Georgia,serif;
+  font-size:30px;
+  letter-spacing:4px;
+  margin-top:16px;
+}
+.sub{
+  text-align:center;
+  color:#82796e;
+  letter-spacing:1px;
+  font-size:13px;
+  margin:8px 0 22px;
+}
+.bar{
+  height:7px;
+  background:#e6dccb;
+  border-radius:9px;
+  overflow:hidden;
+}
+.bar i{
+  display:block;
+  width:10%;
+  height:100%;
+  background:#b98a45;
+}
+.card{
+  background:#fffaf2;
+  border:1px solid #e5d8c4;
+  border-radius:24px;
+  padding:24px;
+  margin-top:28px;
+  box-shadow:0 8px 30px #5e4c3220;
+}
+h1{
+  font-family:Georgia,serif;
+  font-size:34px;
+  margin:4px 0 8px;
+}
+h2{
+  font-family:Georgia,serif;
+  font-size:25px;
+}
+.eyebrow{
+  color:#a27739;
+  font-weight:700;
+  font-size:12px;
+  letter-spacing:1.5px;
+}
+.find{
+  height:230px;
+  border-radius:18px;
+  background:linear-gradient(145deg,#e9dfcf,#faf6ef);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:20px 0;
+  font-family:Georgia,serif;
+  color:#9b815f;
+  text-align:center;
+}
+.seller{
+  border-left:3px solid #c49a5a;
+  padding:8px 14px;
+  margin:18px 0;
+}
+.lucy{
+  background:#eee2ce;
+  border-radius:18px;
+  padding:14px 16px;
+  margin:18px 0;
+}
+.btn{
+  width:100%;
+  border:1px solid #c7aa7d;
+  background:#fffaf3;
+  border-radius:15px;
+  padding:15px;
+  margin:7px 0;
+  font-size:16px;
+  color:#332c23;
+}
+.btn.primary{
+  background:#332b22;
+  color:white;
+  border-color:#332b22;
+}
+.hidden{display:none}
+.achievement{
+  text-align:center;
+  font-size:56px;
+}
+.small{
+  font-size:13px;
+  color:#887d70;
+}
+</style>
+</head>
+
+<body>
+
+<main class="app">
+
+<div class="brand">OH MY GOD</div>
+<div class="sub">VINTAGE SCHOOL · УРОВЕНЬ 1 — НАУЧИСЬ ВИДЕТЬ</div>
+
+<div class="bar"><i id="progress"></i></div>
+
+<section class="card" id="s1">
+
+<div class="eyebrow">УРОК 1/10 · ~3 МИНУТЫ</div>
+
+<h1>НЕ ХВАТАЙ СРАЗУ</h1>
+
+<div class="find">
+Здесь скоро будет твоя настоящая<br>
+Sarah Coventry ✨
+</div>
+
+<p>
+<b>Суббота. Блошиный рынок. 7:34.</b><br>
+Кофе ещё не подействовал. И тут на столе лежит ОНА.
+</p>
+
+<div class="seller">
+Продавец: «Винтажная. Американская. Старая.»<br>
+<b>€12</b>
+</div>
+
+<div class="lucy">
+👩🏻‍🦱 <b>Люся:</b>
+«Звучит красиво. А теперь попробуем не покупать историю вместе с брошью.» 😏
+</div>
+
+<button class="btn" onclick="go(2)">😍 БЕРУ ЗА €12</button>
+<button class="btn primary" onclick="go(2)">🤨 СНАЧАЛА ПОСМОТРЮ</button>
+<button class="btn" onclick="go(2)">🚶 НЕ МОЁ — ИДУ ДАЛЬШЕ</button>
+
+</section>
+
+
+<section class="card hidden" id="s2">
+
+<div class="eyebrow">ШАГ 2</div>
+
+<h2>С чего начнём?</h2>
+
+<p>У тебя 30 секунд. Что проверишь первым?</p>
+
+<button class="btn" onclick="hint('Клеймо полезно. Но сначала его ещё надо найти 😏')">
+🔎 ИЩУ КЛЕЙМО
+</button>
+
+<button class="btn" onclick="hint('Красивые камни прекрасно умеют отвлекать 😂')">
+💎 РАССМАТРИВАЮ КАМНИ
+</button>
+
+<button class="btn" onclick="hint('Google успеет. Сначала поймём, что именно ищем.')">
+📱 ИЩУ В GOOGLE
+</button>
+
+<button class="btn primary" onclick="go(3)">
+🙃 ПЕРЕВОРАЧИВАЮ
+</button>
+
+<div id="hint" class="lucy hidden"></div>
+
+</section>
+
+
+<section class="card hidden" id="s3">
+
+<div class="eyebrow">ОБОРОТ</div>
+
+<h2>Вот где начинается расследование</h2>
+
+<div class="find">
+Здесь будет настоящее фото<br>
+оборота твоей броши
+</div>
+
+<p>
+Не ищи пока ответ.
+Смотри на застёжку, конструкцию, крепление центра и маркировку.
+</p>
+
+<button class="btn primary" onclick="go(4)">
+🔎 Я НАШЛА КЛЕЙМО
+</button>
+
+</section>
+
+
+<section class="card hidden" id="s4">
+
+<div class="eyebrow">КЛЕЙМО</div>
+
+<h2>Не дорисовываем буквы силой мысли</h2>
+
+<p>
+На нашем экземпляре маркировка отбита криво.
+Фиксируем только то, что действительно можем прочитать.
+</p>
+
+<div class="lucy">
+👩🏻‍🦱 <b>Люся:</b>
+«Не уверена — так и записываем.
+Хорошая атрибуция начинается не с ответа.
+Она начинается с вопроса.»
+</div>
+
+<button class="btn primary" onclick="go(5)">
+📚 ПРОВЕРИТЬ ПО ИСТОЧНИКУ
+</button>
+
+</section>
+
+
+<section class="card hidden" id="s5">
+
+<div class="eyebrow">РАСКРЫТИЕ</div>
+
+<h2>SARAH COVENTRY</h2>
+
+<p>
+Теперь сопоставляем не только клеймо:
+форму цветка, зубчатые ажурные лепестки,
+длинный стебель, куполообразный центр,
+AB-стразы и размер.
+</p>
+
+<div class="lucy">
+👩🏻‍🦱 <b>Люся:</b>
+«Вот теперь это уже не “мне кажется”.
+Это аргумент.»
+</div>
+
+<button class="btn primary" onclick="go(6)">
+ЧТО Я ТОЛЬКО ЧТО СДЕЛАЛА?
+</button>
+
+</section>
+
+
+<section class="card hidden" id="s6">
+
+<div class="achievement">🙃</div>
+
+<h2 style="text-align:center">
+СМОТРИШЬ НА ЗАД
+</h2>
+
+<p>
+Ты посмотрела на вещь до покупки,
+перевернула её, нашла маркировку,
+не стала додумывать буквы
+и проверила гипотезу по источнику.
+</p>
+
+<div class="lucy">
+👩🏻‍🦱 <b>Люся:</b>
+«Теперь ты не просто смотришь на украшение.
+Ты его осматриваешь.» 😏
+</div>
+
+<p class="small" style="text-align:center">
+НЕ УГАДЫВАЙ.<br>
+СОБИРАЙ ДОКАЗАТЕЛЬСТВА.
+</p>
+
+</section>
+
+</main>
+
+<script>
+function go(n){
+  document.querySelectorAll("section").forEach(function(x){
+    x.classList.add("hidden");
+  });
+
+  document.getElementById("s"+n).classList.remove("hidden");
+  document.getElementById("progress").style.width=(n/6*100)+"%";
+  window.scrollTo(0,0);
+}
+
+function hint(t){
+  var x=document.getElementById("hint");
+  x.textContent="👩🏻‍🦱 Люся: "+t;
+  x.classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
